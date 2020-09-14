@@ -15,9 +15,9 @@ import LineGraph from "./LineGraph";
 import "leaflet/dist/leaflet.css";
 
 
-import "./App.css";
+import "./app.css";
 
-function App() {
+function Home() {
   const [countries,setCountries]=useState([]);
   const [country,setCountry]=useState("worldwide");
   const [countryInfo,setCountryInfo]=useState({});
@@ -82,7 +82,7 @@ function App() {
     <div className="app">
     <div className="app__left">
     <div className="app__header">
-     <h1>COVID-19 TRACKER </h1>
+    <h1>Covid 19 Updates</h1>
      <FormControl className="app__dropdown">
        <Select variant="outlined" onChange={onCountryChange} value={country}>
        <MenuItem value="worldwide">WorldWide</MenuItem>
@@ -101,8 +101,8 @@ function App() {
      </div>
      <div className="app__stats">
      <InfoBox isRed active={casesType==="cases"}  onClick={e=>setCasesType("cases")} title="coronavirus cases" cases={prettyPrintStat(countryInfo.todayCases)} total={countryInfo.cases} />
-     <InfoBox active={casesType==="recovered"}   onClick={e=>setCasesType("recovered")}  title="coronavirus recoveries"  cases={prettyPrintStat(countryInfo.todayRecovered)}  total={countryInfo.recovered} />
-     <InfoBox isRed  active={casesType==="deaths"}   onClick={e=>setCasesType("deaths")}  title="coronavirus deaths" cases={prettyPrintStat(countryInfo.todayDeaths)} total={countryInfo.deaths}  />
+     <InfoBox isGreen active={casesType==="recovered"}   onClick={e=>setCasesType("recovered")}  title="coronavirus recoveries"  cases={prettyPrintStat(countryInfo.todayRecovered)}  total={countryInfo.recovered} />
+     <InfoBox isRed active={casesType==="deaths"}   onClick={e=>setCasesType("deaths")}  title="coronavirus deaths" cases={prettyPrintStat(countryInfo.todayDeaths)} total={countryInfo.deaths}  />
 
    
      </div>
@@ -126,4 +126,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

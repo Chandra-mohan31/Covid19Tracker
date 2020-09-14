@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+}
+.Headr{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.Headr > h3{
+    color: #fc3c3c;
+    font-size: 2rem;
+}
+.Headr__options{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border: 0.2px solid gray;
+    margin: 13px;
+    padding: 5px;
+}
+.Headr__options:hover{
+    transform:  scale(1.09);
+}
+.Headr > a{
+    text-decoration: none;
+}

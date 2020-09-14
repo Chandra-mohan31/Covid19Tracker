@@ -1,0 +1,18 @@
+.helpline{
+    display: flex;
+    justify-content: center;
+}
+
+.helpData > tr{
+   border: 0.5px dotted black;
+   color: black;
+}
+.helpData tr:nth-of-type(odd) {
+    color: black;
+    background-color: lightgray;
+}
+.helpData td{
+   border: 0.5px solid gray;
+    padding: 0.5rem;
+   
+}

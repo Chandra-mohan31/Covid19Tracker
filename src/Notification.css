@@ -1,0 +1,52 @@
+.notesData__title{
+    color: black;
+    font-weight: bold;
+}
+.notesData > tr{
+   border: 2px solid black;
+   color: black;
+}
+.notesData tr:nth-of-type(odd) {
+    color: black;
+    background-color: lightgray;
+}
+.notesData td{
+    padding: 0.5rem;
+    margin-left: 4px;
+}
+.btn__link{
+    background-color: Black;
+    color: white;
+}
+.btn__link:hover{
+     transform: scale(1.07);
+     cursor: pointer;
+}
+.notesData td{
+    border: 0.5px solid gray;
+     padding: 0.5rem;
+    
+ }
+
+/*
+    .table {
+    margin-top: 20px;
+    overflow: scroll;
+    height: 400px;
+    color: #6a5d5d;
+    
+
+    
+}
+.table tr{
+    display: flex;
+    justify-content: space-between;
+}
+.table td{
+    padding: 0.5rem;
+}
+.table tr:nth-of-type(odd) {
+    background-color:#f3f2f8;
+}
+    
+    */
